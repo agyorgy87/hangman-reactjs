@@ -1,3 +1,7 @@
+# HOST LINK FOR THE HANGMAN GAME:
+
+https://hangmangame2022.web.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

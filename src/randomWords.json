@@ -1,0 +1,23 @@
+[
+    {
+        "possibleRandomObject":[
+            {"possibleRandomWord": "APPLE"},
+            {"possibleRandomWord": "PEACH"},
+            {"possibleRandomWord": "STRAWBERRY"},
+            {"possibleRandomWord": "LIME"},
+            {"possibleRandomWord": "LEMON"},
+            {"possibleRandomWord": "ORANGE"}      
+        ]
+    },
+    {
+        "possibleRandomObject":[
+            {"possibleRandomWord": "HORSE"},
+            {"possibleRandomWord": "TIGER"},
+            {"possibleRandomWord": "PANDA"},
+            {"possibleRandomWord": "CROCODILE"},
+            {"possibleRandomWord": "ELEPHANT"},
+            {"possibleRandomWord": "HIPPOPOTAMUS"}
+            
+        ]
+    }
+]
