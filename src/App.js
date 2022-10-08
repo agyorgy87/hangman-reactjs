@@ -6,7 +6,7 @@ import Game from "./components/Game.js";
 const App = () => {
     
     return (
-        <div className="App" style={{ backgroundImage: `url(${background})`}}>
+        <div className="app" style={{ backgroundImage: `url(${background})`}}>
             <div>
                 <Game />
             </div>

@@ -279,87 +279,87 @@ const Game = () => {
     */
 
     return (
-        <div className="gameBoard">
-            <div className="setgridHeaderBoxes">
-                <div className="titleAndStartButtonBox">
-                    <div className="setTitleAndStartButtonBox">
-                        <h1 className="hangmanTitle">HANGMAN</h1>
-                            <div className="startButtonBox">
-                                <button className="startButton" onClick={GenerateAWordToStartTheGame}>
+        <div className="game-board">
+            <div className="grid-container">
+                <div className="title-and-start-button-container">
+                    <div className="set-title-and-start-button-container">
+                        <h1 className="hangman-title">HANGMAN</h1>
+                            <div className="start-button-container">
+                                <button className="start-button" onClick={GenerateAWordToStartTheGame}>
                                     {startOrRestart}
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-            <div className="secretWordContainer">
-                <div className="secretWordBox">
+            <div className="set-secret-word-container">
+                <div className="secret-word-container">
                     {showWordToBeDechipered ? 
                         <div>
-                            <p className="pushTheStartButtonToPlayTextTitle">Push the start button to play!</p>
+                            <p className="play-text-title">Push the start button to play!</p>
                         </div>
                     :
                         <div>
                             {wordToBeDeciphered.map((element, index) => 
-                            <div className="secretLetter" key={"deciphered" + index}> {element} </div>)}
+                            <div className="secret-letter" key={"deciphered" + index}> {element} </div>)}
                         </div>
                     }
                 </div>
             </div>
-                <div className="letterBoxContainer">
+                <div className="letter-container">
                     {showResult ? 
                         <div>
-                            <div className="lettersFirstRow">
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.A} onClick={() => searchForTheLetter("A")}>A</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.B} onClick={() => searchForTheLetter("B")}>B</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.C} onClick={() => searchForTheLetter("C")}>C</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.D} onClick={() => searchForTheLetter("D")}>D</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.E} onClick={() => searchForTheLetter("E")}>E</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.F} onClick={() => searchForTheLetter("F")}>F</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.G} onClick={() => searchForTheLetter("G")}>G</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.H} onClick={() => searchForTheLetter("H")}>H</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.I} onClick={() => searchForTheLetter("I")}>I</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.J} onClick={() => searchForTheLetter("J")}>J</button>  
+                            <div className="letters-first-row">
+                                <button className="letter-buttons-style" disabled={buttonDisabled.A} onClick={() => searchForTheLetter("A")}>A</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.B} onClick={() => searchForTheLetter("B")}>B</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.C} onClick={() => searchForTheLetter("C")}>C</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.D} onClick={() => searchForTheLetter("D")}>D</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.E} onClick={() => searchForTheLetter("E")}>E</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.F} onClick={() => searchForTheLetter("F")}>F</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.G} onClick={() => searchForTheLetter("G")}>G</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.H} onClick={() => searchForTheLetter("H")}>H</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.I} onClick={() => searchForTheLetter("I")}>I</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.J} onClick={() => searchForTheLetter("J")}>J</button>  
                             </div>
-                            <div className="lettersSecondRow"> 
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.K} onClick={() => searchForTheLetter("K")}>K</button>  
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.L} onClick={() => searchForTheLetter("L")}>L</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.M} onClick={() => searchForTheLetter("M")}>M</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.N} onClick={() => searchForTheLetter("N")}>N</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.O} onClick={() => searchForTheLetter("O")}>O</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.P} onClick={() => searchForTheLetter("P")}>P</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.Q} onClick={() => searchForTheLetter("Q")}>Q</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.R} onClick={() => searchForTheLetter("R")}>R</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.S} onClick={() => searchForTheLetter("S")}>S</button>                     
+                            <div className="letters-second-row"> 
+                                <button className="letter-buttons-style" disabled={buttonDisabled.K} onClick={() => searchForTheLetter("K")}>K</button>  
+                                <button className="letter-buttons-style" disabled={buttonDisabled.L} onClick={() => searchForTheLetter("L")}>L</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.M} onClick={() => searchForTheLetter("M")}>M</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.N} onClick={() => searchForTheLetter("N")}>N</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.O} onClick={() => searchForTheLetter("O")}>O</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.P} onClick={() => searchForTheLetter("P")}>P</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.Q} onClick={() => searchForTheLetter("Q")}>Q</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.R} onClick={() => searchForTheLetter("R")}>R</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.S} onClick={() => searchForTheLetter("S")}>S</button>                     
                             </div>
-                            <div className="lettersThirdRow">
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.T} onClick={() => searchForTheLetter("T")}>T</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.U} onClick={() => searchForTheLetter("U")}>U</button> 
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.V} onClick={() => searchForTheLetter("V")}>V</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.W} onClick={() => searchForTheLetter("W")}>W</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.X} onClick={() => searchForTheLetter("X")}>X</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.Y} onClick={() => searchForTheLetter("Y")}>Y</button>
-                                <button className="letterButtonsStyle" disabled={buttonDisabled.Z} onClick={() => searchForTheLetter("Z")}>Z</button>
+                            <div className="letters-third-row">
+                                <button className="letter-buttons-style" disabled={buttonDisabled.T} onClick={() => searchForTheLetter("T")}>T</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.U} onClick={() => searchForTheLetter("U")}>U</button> 
+                                <button className="letter-buttons-style" disabled={buttonDisabled.V} onClick={() => searchForTheLetter("V")}>V</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.W} onClick={() => searchForTheLetter("W")}>W</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.X} onClick={() => searchForTheLetter("X")}>X</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.Y} onClick={() => searchForTheLetter("Y")}>Y</button>
+                                <button className="letter-buttons-style" disabled={buttonDisabled.Z} onClick={() => searchForTheLetter("Z")}>Z</button>
                             </div>
                         </div>
                     :
-                        <div className="resultTextsBox">
+                        <div className="result-texts-container">
                             { winOrLose ?
                                 <div>
-                                    <p className="resultTexts">YOU WON :)</p>
+                                    <p className="result-texts">YOU WON :)</p>
                                 </div>    
                             :
                                 <div>
-                                    <p className="resultTexts">YOU LOSE :(</p> 
-                                    <p className="resultTexts">TRY AGAIN ;)</p>
+                                    <p className="result-texts">YOU LOSE :(</p> 
+                                    <p className="result-texts">TRY AGAIN ;)</p>
                                 </div>
                             } 
                         </div>
                     }                                        
                 </div>
-                <div className="hangedManBox">
+                <div className="hanged-man-container">
                     <canvas 
-                    className="canvasBoard" 
+                    className="canvas-board" 
                     ref={canvas}/>
                 </div>
         </div>
