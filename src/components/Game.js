@@ -1,6 +1,6 @@
-import './Game.css';
+import '../css/Game.css';
 import React, {useState, useRef, useEffect} from 'react';
-import randomWords from "./randomWords.json";
+import randomWords from "../randomWords.json";
 
 const Game = () => {
 

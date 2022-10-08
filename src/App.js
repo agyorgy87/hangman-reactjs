@@ -1,6 +1,6 @@
-import './App.css';
+import './css/App.css';
 import background from "./images/squareMeshPaper.jpg";
-import Game from "./Game.js";
+import Game from "./components/Game.js";
 
 
 const App = () => {
