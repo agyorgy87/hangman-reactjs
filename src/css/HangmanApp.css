@@ -4,7 +4,10 @@
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    text-align: center;
+    background-image: url("../images/squareMeshPaper.jpg");
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .game-board {
@@ -12,26 +15,20 @@
     width: 100%; 
     display: flex;
     flex-direction: column;
-    display: grid;
-    grid-template-columns: repeat(4, minmax(300px, 200px));
-    grid-template-rows: repeat(3, minmax(250px, 200px));
 }
 
-.grid-container {
-    grid-column-start: 1;
-    grid-column-end: span 4;
-}
-
-.secret-word-container {
-    grid-column: 1 / 3;
-    grid-row: 2 / 2; 
-}
-
-.secret-word-container {
-    padding-top: 50px;
+.solve-and-buttons-table-and-hangman-canvas-container {
     display: flex;
     justify-content: center;
-    text-align: center;
 }
+
+@media (max-width: 992px) {
+
+    .solve-and-buttons-table-and-hangman-canvas-container {
+        flex-direction: column-reverse;
+    }
+
+}
+
 
 

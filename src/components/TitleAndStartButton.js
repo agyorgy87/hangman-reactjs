@@ -50,17 +50,15 @@ const TitleAndStartButton = ({ allWords, secretWordForAGame, setWordToBeDechiper
     } 
 
     return (
-        <div className="title-and-start-button-container">
-            <div className="title-and-start-button-container">
-                <h1 className="hangman-title">HANGMAN</h1>
-                    <div className="start-button-container">
-                        <button className="start-button" onClick={GenerateAWordToStartTheGame}>
-                            {startOrRestart}
-                        </button>
-                    </div>
-            </div>
+        <div className="title-and-start-button-container">  
+            <h1 className="hangman-title">HANGMAN</h1>
+                <div className="start-button-container">
+                    <button className="start-button" onClick={GenerateAWordToStartTheGame}>
+                        {startOrRestart}
+                    </button>
+                </div>
         </div>
-  )
+    )
 }
 
 export default TitleAndStartButton;

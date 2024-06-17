@@ -140,7 +140,7 @@ const HangmanWithCanvas = ({hangManStatus}) => {
     return (
         <div className="hanged-man-container">
             <canvas 
-            className="canvas-board" 
+            className="canvas-board"  
             ref={canvas}/>
         </div>
     )

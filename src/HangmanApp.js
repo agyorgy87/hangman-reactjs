@@ -63,9 +63,9 @@ const HangmanApp = () => {
     }, [hangManStatus, wordToBeDeciphered, showResult]);
     
     return (
-        <div className="main-board" style={{ backgroundImage: `url(${background})`}}>
+        <div className="main-board" >{/*style={{ backgroundImage: `url(${background})`}}*/} 
             <div className="game-board">
-                <div className="grid-container">
+                <div>
                     <TitleAndStartButton 
                     allWords={allWords} 
                     secretWordForAGame={secretWordForAGame}
@@ -78,31 +78,35 @@ const HangmanApp = () => {
                     setButtonDisabled={setButtonDisabled}
                     />
                 </div>
-                <div className="secret-word-container">
-                    <WordToBeSolve
-                    showWordToBeDechipered={showWordToBeDechipered}
-                    wordToBeDeciphered={wordToBeDeciphered}
-                    />
-                </div>
-                <div>
-                    <ButtonsWithLettersToSolve
-                    wordToBeDeciphered={wordToBeDeciphered}
-                    setWordToBeDechipered={setWordToBeDechipered}
-                    buttonDisabled={buttonDisabled}
-                    setButtonDisabled={setButtonDisabled}
-                    setLetterForDisabled={setLetterForDisabled}
-                    secretWordForAGame={secretWordForAGame}
-                    hangManStatus={hangManStatus}
-                    setHangManStatus={setHangManStatus}
-                    showResult={showResult}
-                    winOrLose={winOrLose}
-                    />
-                </div>
-                <div>
-                    <HangmanWithCanvas
-                    hangManStatus={hangManStatus}
-                    />
-                </div>
+                <div className="solve-and-buttons-table-and-hangman-canvas-container">
+                    <div>
+                        <div>
+                            <WordToBeSolve
+                            showWordToBeDechipered={showWordToBeDechipered}
+                            wordToBeDeciphered={wordToBeDeciphered}
+                            />
+                        </div>
+                        <div>
+                            <ButtonsWithLettersToSolve
+                            wordToBeDeciphered={wordToBeDeciphered}
+                            setWordToBeDechipered={setWordToBeDechipered}
+                            buttonDisabled={buttonDisabled}
+                            setButtonDisabled={setButtonDisabled}
+                            setLetterForDisabled={setLetterForDisabled}
+                            secretWordForAGame={secretWordForAGame}
+                            hangManStatus={hangManStatus}
+                            setHangManStatus={setHangManStatus}
+                            showResult={showResult}
+                            winOrLose={winOrLose}
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <HangmanWithCanvas
+                        hangManStatus={hangManStatus}
+                        />
+                    </div>
+                </div>              
             </div>        
         </div>
     );

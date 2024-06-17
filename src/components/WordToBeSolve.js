@@ -3,7 +3,7 @@ import "../css/WordToBeSolve.css";
 
 const WordToBeSolve = ({showWordToBeDechipered, wordToBeDeciphered}) => {
   return ( 
-    <div className="secret-word-container">
+    <div className="secret-word-container"> 
         {showWordToBeDechipered ? 
             <div>
                 <p className="play-text-title">Push the start button to play!</p>
@@ -18,4 +18,4 @@ const WordToBeSolve = ({showWordToBeDechipered, wordToBeDeciphered}) => {
   )
 }
 
-export default WordToBeSolve;
+export default WordToBeSolve; 
