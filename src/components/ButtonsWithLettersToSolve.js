@@ -1,5 +1,5 @@
 import React from 'react';
-import "../css/Game.css";
+import "../css/ButtonsWithLettersToSolve.css";
 
 const ButtonsWithLettersToSolve = ({wordToBeDeciphered, setWordToBeDechipered, setLetterForDisabled, buttonDisabled, secretWordForAGame, setButtonDisabled, hangManStatus, setHangManStatus, showResult, winOrLose}) => { 
 
@@ -29,7 +29,7 @@ const ButtonsWithLettersToSolve = ({wordToBeDeciphered, setWordToBeDechipered, s
     }
 
     return (
-        <div className="letter-container">
+        <div className="letter-container"> 
                     {showResult ? 
                         <div>
                             <div className="letters-first-row">

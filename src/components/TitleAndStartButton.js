@@ -1,5 +1,5 @@
 import React from 'react';
-import "../css/Game.css";
+import "../css/TitleAndStartButton.css";
 
 const TitleAndStartButton = ({ allWords, secretWordForAGame, setWordToBeDechipered, setShowWordToBeDechipered,startOrRestart, setStartOrRestrat, setHangManStatus, setShowResult, setButtonDisabled}) => {
 
@@ -51,7 +51,7 @@ const TitleAndStartButton = ({ allWords, secretWordForAGame, setWordToBeDechiper
 
     return (
         <div className="title-and-start-button-container">
-            <div className="set-title-and-start-button-container">
+            <div className="title-and-start-button-container">
                 <h1 className="hangman-title">HANGMAN</h1>
                     <div className="start-button-container">
                         <button className="start-button" onClick={GenerateAWordToStartTheGame}>

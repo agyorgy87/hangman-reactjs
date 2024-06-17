@@ -1,7 +1,7 @@
 import React from 'react';
-import "../css/Game.css";
+import "../css/WordToBeSolve.css";
 
-const WordToBeSold = ({showWordToBeDechipered, wordToBeDeciphered}) => {
+const WordToBeSolve = ({showWordToBeDechipered, wordToBeDeciphered}) => {
   return ( 
     <div className="secret-word-container">
         {showWordToBeDechipered ? 
@@ -18,4 +18,4 @@ const WordToBeSold = ({showWordToBeDechipered, wordToBeDeciphered}) => {
   )
 }
 
-export default WordToBeSold
+export default WordToBeSolve;

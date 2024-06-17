@@ -1,0 +1,48 @@
+.letter-container{
+    grid-column: 1 / 3;
+    grid-row: 3 /3;  
+}
+
+.letters-first-row {
+    display: flex;
+    justify-content: center;
+}
+
+.letters-second-row {
+    display: flex;
+    justify-content: center;
+}
+
+.letters-third-row {
+    display: flex;
+    justify-content: center;
+}
+
+.letter-buttons-style {
+    height: 50px;
+    width: 60px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color:#FF8D29;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: 'Coming Soon', cursive;
+}
+
+.letter-buttons-style:hover {
+    background-color:#fec08a;
+}
+
+.result-texts-container{
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+}
+
+.result-texts {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Coming Soon', cursive;
+}

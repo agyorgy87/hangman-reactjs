@@ -1,0 +1,9 @@
+.hanged-man-container {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.canvas-board {
+    height: 400px;   
+    width: 400px;
+}

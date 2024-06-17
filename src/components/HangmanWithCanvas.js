@@ -1,5 +1,5 @@
 import { useRef, useEffect } from 'react';
-import "../css/Game.css";
+import "../css/HangmanWithCanvas.css";
 
 
 const HangmanWithCanvas = ({hangManStatus}) => {
