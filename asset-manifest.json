@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/hangman-reactjs/static/css/main.c87aca6d.css",
+    "main.js": "/hangman-reactjs/static/js/main.821bc565.js",
+    "static/js/787.20ace30e.chunk.js": "/hangman-reactjs/static/js/787.20ace30e.chunk.js",
+    "static/media/squareMeshPaper.jpg": "/hangman-reactjs/static/media/squareMeshPaper.385a7676be61587166d5.jpg",
+    "index.html": "/hangman-reactjs/index.html",
+    "main.c87aca6d.css.map": "/hangman-reactjs/static/css/main.c87aca6d.css.map",
+    "main.821bc565.js.map": "/hangman-reactjs/static/js/main.821bc565.js.map",
+    "787.20ace30e.chunk.js.map": "/hangman-reactjs/static/js/787.20ace30e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c87aca6d.css",
+    "static/js/main.821bc565.js"
+  ]
+}
