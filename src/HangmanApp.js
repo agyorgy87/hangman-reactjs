@@ -1,6 +1,5 @@
 import './css/HangmanApp.css';
 import { useEffect, useState, useRef } from 'react';
-import background from "./images/squareMeshPaper.jpg";
 import randomWords from "./json/randomWords.json";
 import TitleAndStartButton from './components/TitleAndStartButton.js';
 import WordToBeSolve from './components/WordToBeSolve.js';
@@ -18,7 +17,6 @@ const HangmanApp = () => {
     const [hangManStatus, setHangManStatus] = useState(0);
     const [showResult, setShowResult] = useState(true);
     const [winOrLose, setWinOrLose] = useState(true);
-    const [letterForDisabled, setLetterForDisabled] = useState("");
     const [buttonDisabled, setButtonDisabled] = useState({
         "A": true,
         "B": true,
@@ -63,7 +61,7 @@ const HangmanApp = () => {
     }, [hangManStatus, wordToBeDeciphered, showResult]);
     
     return (
-        <div className="main-board" >{/*style={{ backgroundImage: `url(${background})`}}*/} 
+        <div className="main-board" >
             <div className="game-board">
                 <div>
                     <TitleAndStartButton 
@@ -92,7 +90,6 @@ const HangmanApp = () => {
                             setWordToBeDechipered={setWordToBeDechipered}
                             buttonDisabled={buttonDisabled}
                             setButtonDisabled={setButtonDisabled}
-                            setLetterForDisabled={setLetterForDisabled}
                             secretWordForAGame={secretWordForAGame}
                             hangManStatus={hangManStatus}
                             setHangManStatus={setHangManStatus}

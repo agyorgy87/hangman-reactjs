@@ -1,12 +1,11 @@
 import React from 'react';
 import "../css/ButtonsWithLettersToSolve.css";
 
-const ButtonsWithLettersToSolve = ({wordToBeDeciphered, setWordToBeDechipered, setLetterForDisabled, buttonDisabled, secretWordForAGame, setButtonDisabled, hangManStatus, setHangManStatus, showResult, winOrLose}) => { 
+const ButtonsWithLettersToSolve = ({wordToBeDeciphered, setWordToBeDechipered, buttonDisabled, secretWordForAGame, setButtonDisabled, hangManStatus, setHangManStatus, showResult, winOrLose}) => { 
 
     const searchForTheLetter = (letter) => {
 
         let arrayForLetterToInsert = [...wordToBeDeciphered]
-        setLetterForDisabled(letter);
         let arrayForSetDisabledLetter = {...buttonDisabled}
 
         for(let i = 0; i < secretWordForAGame.current.length; i++){
