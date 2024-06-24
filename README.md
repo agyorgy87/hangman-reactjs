@@ -1,6 +1,6 @@
 # HOST LINK FOR THE HANGMAN GAME:
 
-https://hangmangame2022.web.app/
+https://agyorgy87.github.io/hangman-reactjs/
 
 # Getting Started with Create React App
 
